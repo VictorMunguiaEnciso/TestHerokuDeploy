@@ -134,9 +134,9 @@ public class SprintsServiceImpl implements SprintsService {
 		public List<SprintDomain> findAllSprints(Optional<String> name, Optional<String> technology,
 				Optional<LocalDate> start_date, Optional<LocalDate> end_date) {
 				
-			if(name.isEmpty() && technology.isEmpty() && start_date.isEmpty() && end_date.isEmpty()) {
-				return findAll();
-			}
+//			if(name.isEmpty() && technology.isEmpty() && start_date.isEmpty() && end_date.isEmpty()) {
+//				return findAll();
+//			}
 				return findAllByParams(name, technology, start_date, end_date);
 		}
 	

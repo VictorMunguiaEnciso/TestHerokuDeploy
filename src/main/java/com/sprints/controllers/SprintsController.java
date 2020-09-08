@@ -80,4 +80,10 @@ public class SprintsController {
 		return sprintsService.updateSprint(sprintDomain, id);
 
 	}
+	
+	@ResponseStatus(value = HttpStatus.OK)
+	@GetMapping("/testingGET")
+	public String testGetOperation() {
+		return "Nice Answerd";
+	}
 }
